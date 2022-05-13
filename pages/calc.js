@@ -1,4 +1,4 @@
-/* eslint-disable react-hooks/exhaustive-deps */
+
 import React, { useState, useEffect } from 'react'
 import Button from './button'
 
@@ -14,6 +14,7 @@ const [AngkaPertama, setAngkaPertama] = useState(null)
 
 useEffect(() => {
    showNumber() 
+// eslint-disable-next-line react-hooks/exhaustive-deps
 }, [AngkaPertama,operator,AngkaKedua ])
 
   function showNumber() {
