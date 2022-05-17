@@ -63,10 +63,24 @@ const handleClear = () => {
 }
 
 const handleDelete = () => {
-setDisplayNumber = DisplayNumber.substr(0,DisplayNumber.length-1)
-  
 
+
+  let str = DisplayNumber
+  if(AngkaPertama && AngkaKedua == null) {
+      str = AngkaPertama;
+  } else {
+      str = AngkaKedua;
   }
+  str = str.slice(0,str.length -1)
+
+  if(AngkaPertama && AngkaKedua == null) {
+      setAngkaPertama(str)
+  } else {
+      setAngkaKedua(str)
+  }
+
+}
+  
 
 const handleResult = () => {
   let tempResult

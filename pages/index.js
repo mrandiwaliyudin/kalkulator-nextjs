@@ -1,10 +1,11 @@
 import React from 'react'
 import Calc from './calc'
 
+
 const index = () => {
   return (
-    <div className=' bg-slate-800 w-full aspect-auto auto-cols-max '>
-    <div className='    py-20 px-5 flex justify-around text-center my-20 box-border ml-96 mr-96'>
+    <div className='bg-black bg-fixed  sm:bg-slate-800 h-full  auto-cols-max py-2 '>
+    <div className='    py-10 px-3 flex justify-center text-center my-20 box-border '>
     <Calc />
     </div>
     </div>
